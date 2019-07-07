@@ -1,0 +1,31 @@
+.one{
+    border: 3px solid black;
+}
+
+.two{
+    border: 3px dashed black;
+}
+
+.three{
+    border: 3px dotted black;
+}
+
+.four{
+    border: 3px double black;
+}
+
+.five{
+    border: 5px groove green;
+}
+
+.six{
+    border: 3px ridge green;
+}
+
+.seven{
+    border: 3px inset green;
+}
+
+.eight{
+    border: 3px outset green;
+}

@@ -1,0 +1,26 @@
+fieldset{
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    width: 400px;
+    padding: 20px;
+}
+
+legend{
+    font-weight: 700;
+}
+
+label{
+    float: left;
+    
+}
+
+input{
+    float: right;
+    width: 196px;
+}
+
+select{
+    float: right;
+    width: 200px;
+}
