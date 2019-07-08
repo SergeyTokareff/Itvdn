@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <script type="text/javascript">
+        var arr = [2, -5, 9, 4, 2, -7, 31, 5];
+
+        // Максимальное значение
+        var i = 0;
+        var max = arr[i];
+        do{
+             
+            i++;
+            if(max < arr[i]){
+                max = arr[i];
+            }
+            
+        }while(i < arr.length); 
+
+        document.write("Максимальное значение массива: " + max + "<br>"); 
+
+        // Минимальное значение
+
+        var i = 0;
+        var min = arr[i];
+        do{
+             
+            i++;
+            if(min > arr[i]){
+                min = arr[i];
+            }
+            
+        }while(i < arr.length); 
+
+        document.write("Минимальное значение массива: " + min + "<br>"); 
+
+        // Сумма массива
+
+        var sum = 0;
+
+        for(i = 0; i < arr.length; i++){
+            sum += arr[i];    
+        }
+
+        document.write("Сумма элементов массива: " + sum + "<br>");
+
+        // Среднее арифмитичемкое элементов массива
+
+        var average = 0;
+
+        for(i = 0; i < arr.length; i++){
+            average += arr[i];    
+        }
+
+        average = average / arr.length;
+
+        document.write("Среднее арифмитичемкое элементов массива: " + average + "<br>");
+
+
+        // Нечетные значения
+
+        for(i = 0; i < arr.length; i++){
+            if((arr[i] % 2) != 0){
+                document.write(arr[i] + "<br>");
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
