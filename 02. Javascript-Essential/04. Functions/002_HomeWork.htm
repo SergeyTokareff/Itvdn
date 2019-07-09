@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Add(a, b){
+            res = a + b;
+            document.write(res);
+        }
+        
+        function Sub(a, b){
+            res = a - b;
+            document.write(res);
+        }
+
+        function Mul(a, b){
+            res = a * b;
+            document.write(res);
+        }
+
+        function Div(a, b){
+            if(b != 0){
+                res = a / b;
+                document.write(res);                     
+            }else{
+                b = prompt("На 0 делить нельзя! Введите другое число"); 
+                res = a / b;
+                document.write(res); 
+            }
+        }
+
+        var a = prompt("Введите первое число");
+        var c = prompt("Введите действие");
+        var b = prompt("Введите второе число");
+
+        a = parseInt(a);
+        b = parseInt(b);
+
+        switch(c){
+            case "+":
+                Add(a, b);
+                break;
+
+            case "-":
+                Sub(a, b);
+                break;
+
+            case "*":
+                Mul(a, b);
+                break;
+
+            case "/":
+                Div(a, b);
+                break; 
+
+            default:
+                c = prompt("Нет такого действия. Введите еще раз");         
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

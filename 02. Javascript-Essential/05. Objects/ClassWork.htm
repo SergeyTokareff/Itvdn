@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var manager = {
+            name: "Ivan",
+            surname: "Ivanov",
+            age: "29"
+        };
+
+        var secretary = new Object();
+        secretary.name = "Marcus";
+        secretary.surname =" Rashford";
+        secretary.age = "21";
+
+        for(property in manager){
+            document.write(manager[property] + "<br>");
+        }
+
+        for(property in secretary){
+            document.write(secretary[property] + "<br>");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

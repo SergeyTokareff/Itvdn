@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        var a = prompt("Введите число");
+        a = parseInt(a);
+
+        function f(a){
+            
+
+            if(a > 0){
+                document.write(a + "- это положительное число<br>");
+            }else if(a < 0){
+                document.write(a + "- это отрицательное число<br>")
+            }else{
+                document.write("Это ноль<br>");
+            }
+
+            
+
+            
+            
+            if ((a % 2 == 0) && (a != 2))
+                document.write("Составное число<br>");
+            else if (a == 2)
+                document.write("Простое число<br>");
+            else{ 
+                k = Math.round(Math.sqrt(a));
+                flag = false;
+                        
+                for(i = 2; i < k + 1; i++)
+                    if(a % i == 0)
+                    {
+                        document.write("Составное число<br>");
+                        flag = true;
+                        break;
+                    }
+                        
+                if (flag == false)
+                document.write("Простое число<br>");
+            }
+
+
+            if(((a % 2) == 0) && ((a % 5) == 0) && ((a % 3) == 0) && ((a % 6) == 0) && ((a % 9) == 0)){
+                document.write("Число " + a + " делится без остатка на числа 2, 5, 3, 6 и 9<br>");
+            }else{
+                document.write("Число " + a + " не делится без остатка на числа 2, 5, 3, 6 и 9<br>");
+            }
+
+        }
+
+        f(a);
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
